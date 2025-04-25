@@ -1,0 +1,123 @@
+/* Main App Container */
+.app {
+  font-family: Arial, sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+  color: darkslategray;
+}
+
+/* Header */
+.app h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: midnightblue;
+}
+
+/* Connection Status */
+.connection-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.status-indicator {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.status-indicator.connected { background-color: limegreen; }
+.status-indicator.connecting { background-color: orange; }
+.status-indicator.disconnected { background-color: crimson; }
+
+/* Buttons Container */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Button Styles */
+.subscribe-btn, .unsubscribe-btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.subscribe-btn {
+  background-color: limegreen;
+  color: white;
+}
+
+.subscribe-btn:disabled {
+  background-color: lightgray;
+  cursor: not-allowed;
+}
+
+.unsubscribe-btn {
+  background-color: crimson;
+  color: white;
+}
+
+.unsubscribe-btn:disabled {
+  background-color: lightgray;
+  cursor: not-allowed;
+}
+
+/* Items Table */
+.items-list {
+  width: 100%;
+  overflow-x: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.items-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.items-list th, .items-list td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.items-list th {
+  background-color: ghostwhite;
+  font-weight: bold;
+  color: midnightblue;
+}
+
+.items-list tr:hover {
+  background-color: ghostwhite;
+}
+
+/* Change Indicator */
+.change-indicator {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.change-indicator.up {
+  color: limegreen;
+}
+
+.change-indicator.down {
+  color: crimson;
+}
+
+.change-indicator.same {
+  color: slategray;
+}

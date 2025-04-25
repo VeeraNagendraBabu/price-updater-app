@@ -1,0 +1,62 @@
+# --- GENERAL ---
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*.swn
+*.sublime-workspace
+*.sublime-project
+.DS_Store
+Thumbs.db
+
+# --- ENV FILES ---
+.env
+.env.*
+
+# --- NODE / REACT ---
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+frontend/.next/
+frontend/.cache/
+frontend/.eslintcache
+frontend/yarn.lock
+frontend/package-lock.json
+frontend/pnpm-lock.yaml
+
+# Optional: editor configs
+frontend/.vscode/
+frontend/.idea/
+
+# --- .NET / C# ---
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vscode/
+*.dbmdl
+*.pdb
+*.cache
+*.bak
+*.orig
+*.aps
+*.ncb
+*.opendb
+*.VC.db
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# --- PUBLISH OUTPUT ---
+*.publishsettings
+*.Publish.xml
+*.pubxml
+
+# --- SECRETS ---
+secrets.json
+appsettings.Development.json
+appsettings.Local.json
