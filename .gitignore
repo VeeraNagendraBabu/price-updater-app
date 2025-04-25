@@ -29,7 +29,6 @@ frontend/pnpm-lock.yaml
 # Optional: editor configs
 frontend/.vscode/
 frontend/.idea/
-
 # --- .NET / C# ---
 bin/
 obj/
