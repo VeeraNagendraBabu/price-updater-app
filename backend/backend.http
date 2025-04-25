@@ -1,0 +1,7 @@
+@baseUrl = https://localhost:7078
+@contentType = application/json
+@$guid = a371937d-6c9d-4a0f-ac64-88069fded9e4
+
+### Get all items
+GET {{baseUrl}}/items
+Accept: {{contentType}}
